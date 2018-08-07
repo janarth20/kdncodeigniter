@@ -45,19 +45,19 @@
               <div class="text-center mb-6">
                 <img src="<?= base_url(); ?>demo/brand/tabler.svg" class="h-6" alt="">
               </div>
-              <form class="card" action="" method="post">
+              <form class="card" action="<?= site_url('auth/login'); ?>" method="post">
                 <div class="card-body p-6">
                   <div class="card-title">Login to your account</div>
                   <div class="form-group">
                     <label class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" name="identity" id="identity" aria-describedby="emailHelp" placeholder="Enter email">
                   </div>
                   <div class="form-group">
                     <label class="form-label">
                       Password
                       <a href="<?= base_url(); ?>orgot-password.html" class="float-right small">I forgot password</a>
                     </label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" class="form-control" name="password"  id="password" placeholder="Password">
                   </div>
                   <div class="form-group">
                     <label class="custom-control custom-checkbox">
